@@ -21,14 +21,5 @@
 #Extractcing Data---------------------------- query&amp;lt;-&amp;quot;SELECT playerID,sum(HR) AS career_HR ,sum(SO) AS career_SO FROM Batting GROUP BY playerID HAVING sum(HR)&amp;gt;=400&amp;quot; result&amp;lt;-sqldf(query) #Visulaizing Data---------------------------- ggplot()+ geom_point(data=result,aes(x=career_SO,y=career_HR), size=3, color=&amp;quot;blue&amp;quot;)+ ggtitle(&amp;quot;Career Strikeouts vs.</description>
     </item>
     
-    <item>
-      <title>Post Test</title>
-      <link>http://example.com/post/post-test/</link>
-      <pubDate>Mon, 25 Sep 2017 00:00:00 +0000</pubDate>
-      
-      <guid>http://example.com/post/post-test/</guid>
-      <description>This is just a test.</description>
-    </item>
-    
   </channel>
 </rss>
