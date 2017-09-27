@@ -6,10 +6,19 @@
     <description>Recent content in Posts on Ronald&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 25 Sep 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 27 Sep 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://example.com/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Data Visualization-Scatter Plots</title>
+      <link>http://example.com/post/data-visualization-scatter-plots/</link>
+      <pubDate>Wed, 27 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.com/post/data-visualization-scatter-plots/</guid>
+      <description>library(Lahman) library(sqldf) ## Loading required package: gsubfn ## Loading required package: proto ## Warning in doTryCatch(return(expr), name, parentenv, handler): unable to load shared object &amp;#39;/Library/Frameworks/R.framework/Resources/modules//R_X11.so&amp;#39;: ## dlopen(/Library/Frameworks/R.framework/Resources/modules//R_X11.so, 6): Library not loaded: /opt/X11/lib/libSM.6.dylib ## Referenced from: /Library/Frameworks/R.framework/Resources/modules//R_X11.so ## Reason: image not found ## Warning: running command &amp;#39;&amp;#39;/usr/bin/otool&amp;#39; -L &amp;#39;/Library/Frameworks/ ## R.framework/Resources/library/tcltk/libs//tcltk.so&amp;#39;&amp;#39; had status 1 ## Could not load tcltk. Will use slower R code instead. ## Loading required package: RSQLite library(ggplot2) There will be times when working in Data Science where you will want to visualize the output of your data.</description>
+    </item>
     
     <item>
       <title>Post Test</title>

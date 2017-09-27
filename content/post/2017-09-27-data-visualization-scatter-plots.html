@@ -1,0 +1,48 @@
+---
+title: Data Visualization-Scatter Plots
+author: Ronald Bonavita
+date: '2017-09-27'
+slug: data-visualization-scatter-plots
+categories:
+  - R
+  - Scatter Plots
+  - Visualization
+tags:
+  - Visualization
+  - Scatter Plots
+---
+
+
+
+<pre class="r"><code>library(Lahman)
+library(sqldf)</code></pre>
+<pre><code>## Loading required package: gsubfn</code></pre>
+<pre><code>## Loading required package: proto</code></pre>
+<pre><code>## Warning in doTryCatch(return(expr), name, parentenv, handler): unable to load shared object &#39;/Library/Frameworks/R.framework/Resources/modules//R_X11.so&#39;:
+##   dlopen(/Library/Frameworks/R.framework/Resources/modules//R_X11.so, 6): Library not loaded: /opt/X11/lib/libSM.6.dylib
+##   Referenced from: /Library/Frameworks/R.framework/Resources/modules//R_X11.so
+##   Reason: image not found</code></pre>
+<pre><code>## Warning: running command &#39;&#39;/usr/bin/otool&#39; -L &#39;/Library/Frameworks/
+## R.framework/Resources/library/tcltk/libs//tcltk.so&#39;&#39; had status 1</code></pre>
+<pre><code>## Could not load tcltk.  Will use slower R code instead.</code></pre>
+<pre><code>## Loading required package: RSQLite</code></pre>
+<pre class="r"><code>library(ggplot2)</code></pre>
+<p>There will be times when working in Data Science where you will want to visualize the output of your data. In the 9:00am session of MIS 150, we worked on making scatter plots in RStudio, running a query searching for players with at least 400 career homeruns.</p>
+<pre class="r"><code>#Extractcing Data----------------------------
+
+query&lt;-&quot;SELECT playerID,sum(HR) AS career_HR ,sum(SO) AS career_SO 
+FROM Batting
+GROUP BY playerID
+HAVING sum(HR)&gt;=400&quot;
+
+result&lt;-sqldf(query)
+
+#Visulaizing Data----------------------------
+
+ggplot()+
+  geom_point(data=result,aes(x=career_SO,y=career_HR), size=3, color=&quot;blue&quot;)+
+  ggtitle(&quot;Career Strikeouts vs. Homeruns for Great Hitters&quot;)+
+  xlab(&quot;Career Strikeouts&quot;)+
+  ylab(&quot;Career Homerunes&quot;)</code></pre>
+<p><img src="/post/2017-09-27-data-visualization-scatter-plots_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
+<p>As you can see above, we assigned the output of the query to the variable ‘result’, storing it for later use. We then ran the syntax to make a scatter plot with Career Strikeouts at the X-Axis and Career Homeruns as the Y-Axis, as well as using size 3 blue points.</p>
