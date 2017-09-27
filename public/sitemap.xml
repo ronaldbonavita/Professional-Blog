@@ -31,13 +31,13 @@
   </url>
   
   <url>
-    <loc>http://example.com/tags/scatter-plots/</loc>
+    <loc>http://example.com/categories/scatter-plots/</loc>
     <lastmod>2017-09-27T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.com/categories/scatter-plots/</loc>
+    <loc>http://example.com/tags/scatter-plots/</loc>
     <lastmod>2017-09-27T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -49,13 +49,13 @@
   </url>
   
   <url>
-    <loc>http://example.com/tags/visualization/</loc>
+    <loc>http://example.com/categories/visualization/</loc>
     <lastmod>2017-09-27T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.com/categories/visualization/</loc>
+    <loc>http://example.com/tags/visualization/</loc>
     <lastmod>2017-09-27T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
