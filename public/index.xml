@@ -53,7 +53,8 @@
       <pubDate>Wed, 27 Sep 2017 00:00:00 +0000</pubDate>
       
       <guid>http://example.com/post/data-visualization-scatter-plots/</guid>
-      <description>library(Lahman) library(sqldf) ## Loading required package: gsubfn ## Loading required package: proto ## Warning in doTryCatch(return(expr), name, parentenv, handler): unable to load shared object &amp;#39;/Library/Frameworks/R.framework/Resources/modules//R_X11.so&amp;#39;: ## dlopen(/Library/Frameworks/R.framework/Resources/modules//R_X11.so, 6): Library not loaded: /opt/X11/lib/libSM.6.dylib ## Referenced from: /Library/Frameworks/R.framework/Resources/modules//R_X11.so ## Reason: image not found ## Warning: running command &amp;#39;&amp;#39;/usr/bin/otool&amp;#39; -L &amp;#39;/Library/Frameworks/ ## R.framework/Resources/library/tcltk/libs//tcltk.so&amp;#39;&amp;#39; had status 1 ## Could not load tcltk. Will use slower R code instead. ## Loading required package: RSQLite library(ggplot2) There will be times when working in Data Science where you will want to visualize the output of your data.</description>
+      <description>library(Lahman) library(sqldf) library(ggplot2) There will be times when working in Data Science where you will want to visualize the output of your data. In the 9:00am session of MIS 150, we worked on making scatter plots in RStudio, running a query searching for players with at least 400 career homeruns.
+#Extractcing Data---------------------------- query&amp;lt;-&amp;quot;SELECT playerID,sum(HR) AS career_HR ,sum(SO) AS career_SO FROM Batting GROUP BY playerID HAVING sum(HR)&amp;gt;=400&amp;quot; result&amp;lt;-sqldf(query) #Visulaizing Data---------------------------- ggplot()+ geom_point(data=result,aes(x=career_SO,y=career_HR), size=3, color=&amp;quot;blue&amp;quot;)+ ggtitle(&amp;quot;Career Strikeouts vs.</description>
     </item>
     
     <item>

@@ -11,7 +11,7 @@ tags:
   - Visualization
   - Scatter Plots
 ---
-```{r}
+```{r warning=FALSE, message=FALSE}
 library(Lahman)
 library(sqldf)
 library(ggplot2)
