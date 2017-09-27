@@ -4,10 +4,10 @@ title = "Ronald's Blog"
 theme = "minimal"
 
 [params]
-    author = "Calin Tataru"
+    author = "Ronald Bonavita"
     description = "MIS 150 Introduction to Data Science Blog"
     githubUsername = "#"
-    accent = "red"
+    accent = "blue"
     showBorder = true
     backgroundColor = "white"
     font = "Raleway" # should match the name on Google Fonts!
