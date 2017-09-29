@@ -10,6 +10,12 @@ categories:
 tags:
   - Time Series
 ---
+```{r warning=FALSE, message=FALSE}
+ibrary(Lahman)
+library(sqldf)
+library(ggplot2)
+```
+
 
 Time series are somewhat similiar to scatter plots in the sense that you can have points on the graph, but the major point that you are looking at with these are trends over time. A way to equate this to something familiar would be looking at a graph for the trends of a particular stock, whether the value went up or down over time with a line showing that trend.
 
