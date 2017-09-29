@@ -1,0 +1,27 @@
+---
+title: Histograms
+author: Ronald Bonavita
+date: '2017-09-29'
+slug: histograms
+categories:
+  - R
+  - Visualization
+  - Histograms
+tags:
+  - Visualization
+  - Histograms
+---
+
+Simply put, a histogram is a graph that uses vertical bars to visualize data amounts. In class, we worked on making a histogram that showed body weights for baseball players, having 50 bars shown on our graph.
+
+```{r}
+query<-"SELECT weight
+FROM Master"
+
+result<-sqldf(query)
+
+ggplot()+
+  geom_histogram(data=result,aes(x=weight),color="green",fill="white",bins=50)+
+  ggtitle("Body Weight Distribution for Baseball Players")
+```
+
