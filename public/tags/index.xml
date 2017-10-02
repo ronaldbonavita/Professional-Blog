@@ -6,10 +6,28 @@
     <description>Recent content in Tags on Ronald&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 27 Sep 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 02 Oct 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://example.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Bar Plots</title>
+      <link>http://example.com/tags/bar-plots/</link>
+      <pubDate>Mon, 02 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.com/tags/bar-plots/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Histograms</title>
+      <link>http://example.com/tags/histograms/</link>
+      <pubDate>Mon, 02 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.com/tags/histograms/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Scatter Plots</title>
@@ -21,9 +39,18 @@
     </item>
     
     <item>
+      <title>Time Series</title>
+      <link>http://example.com/tags/time-series/</link>
+      <pubDate>Fri, 29 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.com/tags/time-series/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Visualization</title>
       <link>http://example.com/tags/visualization/</link>
-      <pubDate>Wed, 27 Sep 2017 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 02 Oct 2017 00:00:00 +0000</pubDate>
       
       <guid>http://example.com/tags/visualization/</guid>
       <description></description>

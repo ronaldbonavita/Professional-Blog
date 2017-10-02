@@ -3,8 +3,29 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://example.com/post/bar-plots/</loc>
+    <lastmod>2017-10-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.com/post/histograms/</loc>
+    <lastmod>2017-10-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.com/post/time-series/</loc>
+    <lastmod>2017-09-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://example.com/post/data-visualization-scatter-plots/</loc>
     <lastmod>2017-09-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.com/tags/bar-plots/</loc>
+    <lastmod>2017-10-02T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -13,20 +34,26 @@
   </url>
   
   <url>
+    <loc>http://example.com/tags/histograms/</loc>
+    <lastmod>2017-10-02T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://example.com/post/</loc>
-    <lastmod>2017-09-27T00:00:00+00:00</lastmod>
+    <lastmod>2017-10-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://example.com/categories/r/</loc>
-    <lastmod>2017-09-27T00:00:00+00:00</lastmod>
+    <lastmod>2017-10-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://example.com/</loc>
-    <lastmod>2017-09-27T00:00:00+00:00</lastmod>
+    <lastmod>2017-10-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -44,19 +71,31 @@
   
   <url>
     <loc>http://example.com/tags/</loc>
-    <lastmod>2017-09-27T00:00:00+00:00</lastmod>
+    <lastmod>2017-10-02T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/tags/time-series/</loc>
+    <lastmod>2017-09-29T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/categories/time-series/</loc>
+    <lastmod>2017-09-29T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://example.com/tags/visualization/</loc>
-    <lastmod>2017-09-27T00:00:00+00:00</lastmod>
+    <lastmod>2017-10-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://example.com/categories/visualization/</loc>
-    <lastmod>2017-09-27T00:00:00+00:00</lastmod>
+    <lastmod>2017-09-29T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

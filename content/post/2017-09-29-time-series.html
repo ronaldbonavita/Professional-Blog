@@ -1,0 +1,36 @@
+---
+title: Time Series
+author: Ronald Bonavita
+date: '2017-09-29'
+slug: time-series
+categories:
+  - R
+  - Visualization
+  - Time Series
+tags:
+  - Time Series
+---
+
+
+
+<pre class="r"><code>library(Lahman)
+library(sqldf)
+library(ggplot2)</code></pre>
+<p>Time series are somewhat similiar to scatter plots in the sense that you can have points on the graph, but the major point that you are looking at with these are trends over time. A way to equate this to something familiar would be looking at a graph for the trends of a particular stock, whether the value went up or down over time with a line showing that trend.</p>
+<pre class="r"><code># Extraction----------------------------
+
+query&lt;-&quot;SELECT yearID,HR
+FROM Batting
+WHERE playerID=&#39;ruthba01&#39;&quot;
+
+result&lt;-sqldf(query)
+
+# Visualization-------------------------
+
+ggplot()+
+  #geom_point(data=result,aes(x=yearID,y=HR))+
+  geom_line(data=result,aes(x=yearID,y=HR))+
+  ggtitle(&quot;Ruth&#39;s Homerun Totals Throughout the Years&quot;)+
+  xlab(&quot;Year&quot;)+
+  ylab(&quot;Homeruns&quot;)</code></pre>
+<p><img src="/post/2017-09-29-time-series_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>

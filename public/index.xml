@@ -6,10 +6,39 @@
     <description>Recent content on Ronald&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 27 Sep 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 02 Oct 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://example.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Bar Plots</title>
+      <link>http://example.com/post/bar-plots/</link>
+      <pubDate>Mon, 02 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.com/post/bar-plots/</guid>
+      <description>library(Lahman) library(sqldf) library(ggplot2) Bar Plots are exactly what they sound like, they are a visualization of data using bars.
+query&amp;lt;-&amp;quot;SELECT name,HR FROM Teams WHERE yearID=1980 ORDER BY HR&amp;quot; result&amp;lt;-sqldf(query) result$name&amp;lt;-factor(result$name,levels=result$name) ggplot()+ geom_bar(data=result,aes(x=name,y=HR),stat=&amp;#39;identity&amp;#39;,color=&amp;quot;white&amp;quot;,fill=&amp;quot;blue&amp;quot;)+ coord_flip()+ ylab(&amp;quot;Homeruns&amp;quot;)+ xlab(&amp;quot;Teams&amp;quot;)+ ggtitle(&amp;quot;1980 Team Homerun Distribution&amp;quot;) In the code above, you see that we ran a query looking at homerun totals for 1980, flipping the x and y axes with the coord_flip() command.</description>
+    </item>
+    
+    <item>
+      <title>Histograms</title>
+      <link>http://example.com/post/histograms/</link>
+      <pubDate>Mon, 02 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.com/post/histograms/</guid>
+      <description>library(Lahman) library(sqldf) library(ggplot2) A histogram is a visual data representation using one column of data. In the code below, we ran a query looking for player weights from the Master table.
+query&amp;lt;-&amp;quot;SELECT weight FROM Master&amp;quot; result&amp;lt;-sqldf(query) ggplot()+ geom_histogram(data=result,aes(x=weight),color=&amp;quot;green&amp;quot;,fill=&amp;quot;white&amp;quot;,bins=50)+ ggtitle(&amp;quot;Body Weight Distribution for Baseball Players&amp;quot;) </description>
+    </item>
+    
+    <item>
+      <title>Time Series</title>
+      <link>http://example.com/post/time-series/</link>
+      <pubDate>Fri, 29 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.com/post/time-series/</guid>
+      <description>library(Lahman) library(sqldf) library(ggplot2) Time series are somewhat similiar to scatter plots in the sense that you can have points on the graph, but the major point that you are looking at with these are trends over time. A way to equate this to something familiar would be looking at a graph for the trends of a particular stock, whether the value went up or down over time with a line showing that trend.</description>
+    </item>
     
     <item>
       <title>Data Visualization-Scatter Plots</title>

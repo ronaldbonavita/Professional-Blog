@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Visualization</title>
+        <title>Bar Plots</title>
         <style>
 
     html body {
@@ -59,9 +59,6 @@
 <script>$(document).on('click', function() { $('.collapse').collapse('hide'); })</script>
  <meta name="generator" content="Hugo 0.29" />
         
-        <link href="http://example.com/tags/visualization/index.xml" rel="alternate" type="application/rss+xml" title="Ronald&#39;s Blog" />
-        <link href="http://example.com/tags/visualization/index.xml" rel="feed" type="application/rss+xml" title="Ronald&#39;s Blog" />
-        
     </head>
 
     <body>
@@ -72,7 +69,7 @@
 
                 <div class="navbar-header">
 
-                    <a class="navbar-brand visible-xs" href="#">Visualization</a>
+                    <a class="navbar-brand visible-xs" href="#">Bar Plots</a>
 
                     <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse">
                         <span class="icon-bar"></span>
@@ -113,9 +110,7 @@
 
 <main>
 
-    <h2>Visualization</h2>
-
-     <div class="item">
+    <div class="item">
 
     
     
@@ -129,7 +124,39 @@
      <kbd class="item-tag">bar plots</kbd>  <kbd class="item-tag">Visualization</kbd> 
 
 </div>
-  <div class="item">
+
+
+    <br> <div class="text-justify"><pre class="r"><code>library(Lahman)
+library(sqldf)
+library(ggplot2)</code></pre>
+<p>Bar Plots are exactly what they sound like, they are a visualization of data using bars.</p>
+<pre class="r"><code>query&lt;-&quot;SELECT name,HR
+FROM Teams
+WHERE yearID=1980
+ORDER BY HR&quot;
+
+result&lt;-sqldf(query)
+
+result$name&lt;-factor(result$name,levels=result$name)
+
+ggplot()+
+  geom_bar(data=result,aes(x=name,y=HR),stat=&#39;identity&#39;,color=&quot;white&quot;,fill=&quot;blue&quot;)+
+  coord_flip()+
+  ylab(&quot;Homeruns&quot;)+
+  xlab(&quot;Teams&quot;)+
+  ggtitle(&quot;1980 Team Homerun Distribution&quot;)</code></pre>
+<p><img src="/post/2017-10-02-bar-plots_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
+<p>In the code above, you see that we ran a query looking at homerun totals for 1980, flipping the x and y axes with the coord_flip() command.</p>
+</div>
+
+    
+    
+
+    
+
+        <h4 class="page-header">Related</h4>
+
+         <div class="item">
 
     
     
@@ -159,9 +186,11 @@
 </div>
  
 
+    
+
+    
+
 </main>
-
-
 
         <footer>
 

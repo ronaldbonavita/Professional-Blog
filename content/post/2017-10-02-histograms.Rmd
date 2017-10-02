@@ -1,25 +1,22 @@
 ---
 title: Histograms
 author: Ronald Bonavita
-date: '2017-09-29'
+date: '2017-10-02'
 slug: histograms
 categories:
   - R
-  - Visualization
-  - Histograms
 tags:
+  - histograms
   - Visualization
-  - Histograms
 ---
-```{r warning=FALSE,message=FALSE}
-ibrary(Lahman)
+```{r message=FALSE,warning=FALSE}
+library(Lahman)
 library(sqldf)
 library(ggplot2)
 ```
 
-Simply put, a histogram is a graph that uses vertical bars to visualize data amounts. In class, we worked on making a histogram that showed body weights for baseball players, having 50 bars shown on our graph.
-
-```{r}
+A histogram is a visual data representation using one column of data. In the code below, we ran a query looking for player weights from the Master table.
+```{r warning=FALSE}
 query<-"SELECT weight
 FROM Master"
 
@@ -28,5 +25,6 @@ result<-sqldf(query)
 ggplot()+
   geom_histogram(data=result,aes(x=weight),color="green",fill="white",bins=50)+
   ggtitle("Body Weight Distribution for Baseball Players")
+
 ```
 

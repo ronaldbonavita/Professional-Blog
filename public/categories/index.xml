@@ -13,7 +13,7 @@
     <item>
       <title>R</title>
       <link>http://example.com/categories/r/</link>
-      <pubDate>Wed, 27 Sep 2017 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 02 Oct 2017 00:00:00 +0000</pubDate>
       
       <guid>http://example.com/categories/r/</guid>
       <description></description>
@@ -29,9 +29,18 @@
     </item>
     
     <item>
+      <title>Time Series</title>
+      <link>http://example.com/categories/time-series/</link>
+      <pubDate>Fri, 29 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.com/categories/time-series/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Visualization</title>
       <link>http://example.com/categories/visualization/</link>
-      <pubDate>Wed, 27 Sep 2017 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 29 Sep 2017 00:00:00 +0000</pubDate>
       
       <guid>http://example.com/categories/visualization/</guid>
       <description></description>

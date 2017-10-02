@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Time Series on Ronald&#39;s Blog</title>
+    <link>http://example.com/tags/time-series/</link>
+    <description>Recent content in Time Series on Ronald&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 29 Sep 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://example.com/tags/time-series/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Time Series</title>
+      <link>http://example.com/post/time-series/</link>
+      <pubDate>Fri, 29 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.com/post/time-series/</guid>
+      <description>library(Lahman) library(sqldf) library(ggplot2) Time series are somewhat similiar to scatter plots in the sense that you can have points on the graph, but the major point that you are looking at with these are trends over time. A way to equate this to something familiar would be looking at a graph for the trends of a particular stock, whether the value went up or down over time with a line showing that trend.</description>
+    </item>
+    
+  </channel>
+</rss>
