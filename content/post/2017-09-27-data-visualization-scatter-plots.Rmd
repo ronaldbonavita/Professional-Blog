@@ -34,7 +34,7 @@ ggplot()+
   geom_point(data=result,aes(x=career_SO,y=career_HR), size=3, color="blue")+
   ggtitle("Career Strikeouts vs. Homeruns for Great Hitters")+
   xlab("Career Strikeouts")+
-  ylab("Career Homerunes")
+  ylab("Career Homeruns")
 ```
 
 As you can see above, we assigned the output of the query to the variable 'result', storing it for later use. We then ran the syntax to make a scatter plot with Career Strikeouts at the X-Axis and Career Homeruns as the Y-Axis, as well as using size 3 blue points.
